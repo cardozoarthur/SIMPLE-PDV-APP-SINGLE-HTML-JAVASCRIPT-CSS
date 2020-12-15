@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../back-end/index.js"></script>
+    <script src="../back-end/cashier.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>PDV</title>
+</head>
+<body>
+    <header class="menu-principal">
+        <section>
+            <section>
+                <h2> <a href="index.html">PDV</a></h2>
+            </section>
+            <div>
+                <ul>
+                    <li><a href="cadastrar.html">Cadastro de produtos</a></li>
+                    <li><a href="listar-produtos.html">Listar Produtos</a></li>
+                    <li><a href="listar-vendas.html">Listar vendas</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <section id="code">
+                <input type="text" id="code" onchange="addProduct()" autofocus>
+            </section>
+            <section id="infos">
+                <input type="text" id="value" placeholder="total value" readonly>
+                <input type="text" id="quantity" placeholder="total quantity" readonly>
+            </section>
+        </section>
+        <section>
+            <section id="view"></section>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p>
+                Criado em 2020 por
+                <a href="https://www.linkedin.com/in/arthur-gomes-de-freitas-cardozo/" target="_blank" rel="linkedin arthur gomes de freitas cardozo">Arthur Cardozo</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PDV</title>
+</head>
+<body>
+    <header class="menu-principal">
+        <section>
+            <section>
+                <h2> <a href="index.html">PDV</a></h2>
+            </section>
+            <div>
+                <ul>
+                    <li><a href="cadastrar.html">Cadastro de produtos</a></li>
+                    <li><a href="listar-produtos.html">Listar Produtos</a></li>
+                    <li><a href="listar-vendas.html">Listar vendas</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <form>
+            <label for="name"> Nome do produto:
+                <input type="text" id="name" required>
+            </label>
+            <!-- <label for="description"> Breve descrição:
+                <input type="text" id="description">
+            </label> -->
+            <label for="codeCreate"> Código:
+                <input type="text" id="codeCreate" required>
+            </label>
+            <label for="value"> Valor em reais:
+                <input type="number" id="value" min="0" step="0.01" value="0" required>
+            </label>
+            <button id="buttonCreate" onclick="createProduct()"> Criar </button>
+        </form>
+    </main>
+    <footer>
+        <section>
+            <p>
+                Criado em 2020 por
+                <a href="https://www.linkedin.com/in/arthur-gomes-de-freitas-cardozo/" target="_blank" rel="linkedin arthur gomes de freitas cardozo">Arthur Cardozo</a>
+            </p>
+        </section>
+    </footer>
+
+    <script src="../back-end/index.js"></script>
+    <script src="../back-end/cashier.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
